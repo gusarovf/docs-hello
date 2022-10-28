@@ -77,5 +77,5 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/head.php")
   </div>
 </div>
 
-<?php require_once($_SERVER['DOCUMENT_ROOT'] . "./includes/ru/footer.php") ?>
+<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/ru/footer.php") ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/end.php") ?>
