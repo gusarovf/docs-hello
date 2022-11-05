@@ -4,6 +4,10 @@ function breadcrumbs($crumbs_array)
     echo "";
 }
 
+function random($from = 0, $to = 1262055681)
+{
+    return rand($from, $to);
+}
 
 function get_files($path)
 {
