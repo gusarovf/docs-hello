@@ -14,7 +14,6 @@
       }
 
       setTimeout(() => {
-        // success ? success.show() : error.show()
         successBtn.hide()
         errorBtn.hide()
         submitBtn.show()
@@ -27,24 +26,28 @@
       var _this = $(this)
 
 
-      $.ajax({
-        url: "/includes/forms/contact_form/tg-form.php",
-        type: "POST",
-        data: _this.serialize() + "&form-name=" + "contactform",
-        success: function success(res) {
-          var response = JSON.parse(res)
+      try {
+        $.ajax({
+          url: "/includes/forms/contact_form/tg-form.php",
+          type: "POST",
+          data: _this.serialize() + "&form-name=" + "contactform",
+          success: function success(res) {
+            var response = JSON.parse(res)
 
-          if (response.hasOwnProperty("err")) {
-            showSendResult(false)
-          } else if (response.hasOwnProperty("okSend")) {
-            showSendResult(true)
-          } else {
-            // showSendResult(false)
-          }
+            if (response.hasOwnProperty("err")) {
+              showSendResult(false)
+            } else if (response.hasOwnProperty("okSend")) {
+              showSendResult(true)
+            } else {
+              showSendResult(false)
+            }
 
-          _this.find($("input, textarea")).val("")
-        },
-      })
+            _this.find($("input, textarea")).val("")
+          },
+        })
+      } catch (e) {
+        // console.log(e)
+      }
     })
   })
 </script>
