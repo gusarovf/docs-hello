@@ -31,9 +31,7 @@
                 </ul>
             </div>
 
-            <div class="">
-                <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/lang_switcher.php") ?>
-            </div>
+            <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/lang_switcher.php") ?>
         </div>
     </div>
 </header>

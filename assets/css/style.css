@@ -127,6 +127,7 @@ body * {
   padding: 10px 35px;
   text-align: center;
   border-radius: var(--border-radius-default);
+  border: none;
 }
 .button-icon {
   display: inline-flex;
@@ -551,12 +552,12 @@ p:last-child,
 }
 
 .breadcrumbs-force-inline h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+.breadcrumbs-force-inline h2,
+.breadcrumbs-force-inline h3,
+.breadcrumbs-force-inline h4,
+.breadcrumbs-force-inline h5,
+.breadcrumbs-force-inline h6,
+.breadcrumbs-force-inline p {
   display: inline-block !important;
   font-size: 16px !important;
   font-weight: 400;
@@ -624,6 +625,7 @@ p {
 .lang {
   display: flex;
   margin-left: -20px;
+  flex-grow: 1;
 }
 
 .lang__item {
@@ -649,9 +651,6 @@ p {
 .acquiring {
   display: flex;
   justify-content: space-between;
-
-  /* TODO */
-  /* border: 1px solid; */
 }
 
 .acquiring-switcher > * {
@@ -756,4 +755,38 @@ textarea:focus {
 .back-arrow-dgray svg,
 .back-arrow-dgray svg path {
   fill: var(--color-dgray);
+}
+
+.double-side {
+  display: flex;
+  justify-content: space-between;
+}
+
+.double-side__part {
+  width: 49%;
+}
+
+.color-gray {
+  color: var(--color-grayish);
+}
+
+.rows {
+  margin-top: -20px;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.success,
+.failture {
+  color: white;
+  cursor: default;
+  display: none;
+}
+.success {
+  background-color: #44944A;
+}
+.failture {
+  background-color: #960018;
 }

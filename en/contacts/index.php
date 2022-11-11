@@ -31,7 +31,25 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/functions.php");
   </div>
 </div>
 <div class="container main-content">
-  <h2 style="text-align: center; font-weight: 400; margin: 0;">Contacts <br/>are being clarified</h2>
+  <div class="double-side">
+    <div class="double-side__part rows">
+      <div class="row">
+        <h5 class="color-gray">Email:</h5>
+        <p>info@hellopay.online</p>
+      </div>
+      <div class="row">
+        <h5 class="color-gray">Address:</h5>
+        <p>LLC "Hello"<br>Russian Federation, Moscow, Malenkovskaya str., 32, p. 3, office 302</p>
+      </div>
+    </div>
+    <div class="double-side__part">
+      <h5 class="color-gray">Fill out form and we will contact you</h5>
+      <?php
+      require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/forms/contact_form/contact_form.php");
+      echo contact_form("Name", "Contact (phone/email)",  "Send", "английский");
+      ?>
+    </div>
+  </div>
 </div>
 
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/en/footer.php") ?>

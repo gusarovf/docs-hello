@@ -36,9 +36,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="">
-                <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/lang_switcher.php") ?>
-            </div>
+            <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/lang_switcher.php") ?>
             <!-- <div class="button button-icon button-enter button-enter-disabled">
                 <div class="textocon">
                     <span class="enter-icon">

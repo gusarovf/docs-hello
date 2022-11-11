@@ -35,7 +35,25 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/functions.php");
   </div>
 </div>
 <div class="container main-content">
-  <h2 style="text-align: center; font-weight: 400; margin: 0;">Các liên hệ đang được làm rõ</h2>
+  <div class="double-side">
+    <div class="double-side__part rows">
+      <div class="row">
+        <h5 class="color-gray">Email:</h5>
+        <p>info@hellopay.online</p>
+      </div>
+      <div class="row">
+        <h5 class="color-gray">Địa chỉ:</h5>
+        <p>Liên bang nga, Moscow, Malenkovskaya str., 32, p. 3, văn phòng 302</p>
+      </div>
+    </div>
+    <div class="double-side__part">
+      <h5 class="color-gray">Điền vào biểu mẫu và chúng tôi sẽ liên hệ với bạn</h5>
+      <?php
+      require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/forms/contact_form/contact_form.php");
+      echo contact_form("Tên", "Liên hệ (điện thoại/e-mail)",  "Gửi", "вьетнамский");
+      ?>
+    </div>
+  </div>
 </div>
 
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/vn/footer.php") ?>

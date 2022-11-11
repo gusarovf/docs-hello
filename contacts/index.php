@@ -1,6 +1,8 @@
 <?php
 $page_title = "HelloPay - Контакты ";
+
 require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/head.php");
+
 require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/functions.php");
 ?>
 
@@ -9,7 +11,8 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/functions.php");
 
 
 <div class="header-container header-container-shadowed">
-  <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/ru/header.php") ?>
+  <?php
+  require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/ru/header.php") ?>
 </div>
 <div class="breadcrumbs-area">
   <div class="container">
@@ -35,8 +38,28 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/functions.php");
   </div>
 </div>
 <div class="container main-content">
-  <h2 style="text-align: center; font-weight: 400; margin: 0;">Контакты для связи<br>в процессе уточнения</h2>
+  <div class="double-side">
+    <div class="double-side__part rows">
+      <div class="row">
+        <h5 class="color-gray">Email:</h5>
+        <p>info@hellopay.online</p>
+      </div>
+      <div class="row">
+        <h5 class="color-gray">Адрес:</h5>
+        <p>ООО «Хелло»<br>РФ, г. Москва, ул. Маленковская, д. 32, стр. 3, оф. 302</p>
+      </div>
+    </div>
+    <div class="double-side__part">
+      <h5 class="color-gray">Заполните форму и мы свяжемся с вами</h5>
+      <?php
+      require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/forms/contact_form/contact_form.php");
+      echo contact_form("ФИО", "Контакт для связи (телефон/email)",  "Отправить", "русский");
+      ?>
+    </div>
+  </div>
 </div>
 
-<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/ru/footer.php") ?>
-<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/end.php") ?>
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/ru/footer.php") ?>
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/end.php") ?>

@@ -11,7 +11,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@500;600;700&display=swap');
     </style>
     <link rel="stylesheet" href="/assets/css/style.css?v=2">
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="/assets/js/vendor/jquery-3.3.1.min.js"></script>
     <script>
         $(document).ready(function() {
             $("#menu-button").click(function() {

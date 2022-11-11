@@ -31,7 +31,25 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/functions.php");
   </div>
 </div>
 <div class="container main-content">
-  <h2 style="text-align: center; font-weight: 400; margin: 0;">Temaslar netleştiriliyor</h2>
+  <div class="double-side">
+    <div class="double-side__part rows">
+      <div class="row">
+        <h5 class="color-gray">Email:</h5>
+        <p>info@hellopay.online</p>
+      </div>
+      <div class="row">
+        <h5 class="color-gray">Adres:</h5>
+        <p>Rusya Federasyonu, Moskova, Malenkovskaya caddesi, 32, sayfa 3, ofisten. 302</p>
+      </div>
+    </div>
+    <div class="double-side__part">
+      <h5 class="color-gray">Formu doldurun ve sizinle iletişime geçeceğiz</h5>
+      <?php
+      require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/forms/contact_form/contact_form.php");
+      echo contact_form("Ad", "İletişim (telefon/e-posta)",  "Göndermek", "турецкий");
+      ?>
+    </div>
+  </div>
 </div>
 
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/tr/footer.php") ?>
