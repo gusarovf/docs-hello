@@ -83,7 +83,6 @@ function send_email($config, $subject, $body)
 $add = isset($_POST['add']) ? $_POST['add'] : "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && !(strlen($add) > 0)) {
-    $lang = replaceEmpty($_POST, "lang");
     $name = replaceEmpty($_POST, "name");
     $phone = replaceEmpty($_POST, "contact");
     $lang = replaceEmpty($_POST, "lang");
