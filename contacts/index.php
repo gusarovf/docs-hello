@@ -1,5 +1,5 @@
 <?php
-$page_title = "HelloPay - Контакты ";
+$page_title = "HelloPay - Контакты";
 
 require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/head.php");
 
