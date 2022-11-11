@@ -766,6 +766,19 @@ textarea:focus {
   width: 49%;
 }
 
+@media (max-width: 480px) {
+  .double-side {
+    flex-direction: column;
+    padding-top: 20px;
+    margin-top: -40px;
+  }
+  
+  .double-side__part {
+    margin-top: 40px;
+    width: 100%;
+  }
+}
+
 .color-gray {
   color: var(--color-grayish);
 }
@@ -785,7 +798,7 @@ textarea:focus {
   display: none;
 }
 .success {
-  background-color: #44944A;
+  background-color: #44944a;
 }
 .failture {
   background-color: #960018;

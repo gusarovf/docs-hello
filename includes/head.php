@@ -10,7 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@500;600;700&display=swap');
     </style>
-    <link rel="stylesheet" href="/assets/css/style.css?v=2">
+    <link rel="stylesheet" href="/assets/css/style.css?v=3">
     <script src="/assets/js/vendor/jquery-3.3.1.min.js"></script>
     <script>
         $(document).ready(function() {
