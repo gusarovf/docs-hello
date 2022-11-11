@@ -71,7 +71,6 @@ function send_tg($config)
 function send_email($config, $subject, $body)
 {
     $email = $config["MAIL_TO"];
-    $subject = "Тема письма";
     $headers = "";
     $mail_body = $body;
 
@@ -90,5 +89,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !(strlen($add) > 0)) {
     $lang = replaceEmpty($_POST, "lang");
 
     echo json_encode(send_tg($config));
-    send_email($config, "Заявка с сайта: " . $lang, "ФИО:" . $name . "\r\n" . "Контакт:" . $phone);
+    send_email($config, "Заявка с сайта: " . $lang, "ФИО:" . $name . "\r\n" . "Контакт:" . $phone . "\r\n" . "Версия языка сайта:" . $lang);
 }
