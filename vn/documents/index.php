@@ -39,7 +39,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/functions.php");
     <div class="doc-row">
       <h3 class="heading heading-medium">Thỏa thuận thành viên</h3>
       <div class="files">
-        <?= get_files($_SERVER['DOCUMENT_ROOT'] . "/assets/downloadable/en/") ?>
+        <?= get_files("../../assets/downloadable/en/") ?>
       </div>
     </div>
   </div>
