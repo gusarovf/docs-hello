@@ -168,3 +168,34 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/head.php")
 
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/end.php") ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'] . "/includes/ru/footer.php") ?>
+<div class="payment-logos">
+  <div class="container">
+    <div class="payment-logo-groups">
+      <div class="payment-logo-group">
+        <div class="payment-logo">
+          <?= require_once($_SERVER['DOCUMENT_ROOT'] . "/assets/images/payment/mir.svg") ?>
+        </div>
+        <div class="payment-logo">
+          <?= require_once($_SERVER['DOCUMENT_ROOT'] . "/assets/images/payment/mc.svg") ?>
+        </div>
+        <div class="payment-logo">
+          <?= require_once($_SERVER['DOCUMENT_ROOT'] . "/assets/images/payment/visa.svg") ?>
+        </div>
+      </div>
+      <div class="payment-logo-group">
+        <div class="payment-logo">
+          <?= require_once($_SERVER['DOCUMENT_ROOT'] . "/assets/images/payment/g-pay.svg") ?>
+        </div>
+        <div class="payment-logo">
+          <?= require_once($_SERVER['DOCUMENT_ROOT'] . "/assets/images/payment/mir-accept.svg") ?>
+        </div>
+        <div class="payment-logo">
+          <?= require_once($_SERVER['DOCUMENT_ROOT'] . "/assets/images/payment/mc-secure-code.svg") ?>
+        </div>
+        <div class="payment-logo">
+          <?= require_once($_SERVER['DOCUMENT_ROOT'] . "/assets/images/payment/visa-verified.svg") ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

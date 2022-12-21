@@ -1,0 +1,10 @@
+<svg id="mir" xmlns="http://www.w3.org/2000/svg" width="56.509" height="16" viewBox="0 0 56.509 16">
+  <g id="Artboard">
+    <g id="Group">
+      <path id="Combined-Shape" d="M502,89v8.772h4.873v-5.2H512.4A5.4,5.4,0,0,0,517.439,89Z" transform="translate(-461.228 -81.772)" fill="#e6e6e6" fill-rule="evenodd"/>
+      <path id="Combined-Shape-2" data-name="Combined-Shape" d="M494,0c.284,3.585,3.676,6.416,7.818,6.416h8.473A5.406,5.406,0,0,0,505.026,0Z" transform="translate(-453.878)" fill="#d9d9d9" fill-rule="evenodd"/>
+      <path id="Combined-Shape-3" data-name="Combined-Shape" d="M287.412,6.331l0-.008h0a.292.292,0,0,1,.548.134h0v9.462h4.873V0h-4.873a1.953,1.953,0,0,0-1.576,1.031l-3.878,8.316a.322.322,0,0,1-.044.094v0h0a.325.325,0,0,1-.592-.185V0H277V15.919h4.873v0a1.956,1.956,0,0,0,1.549-1.029l3.98-8.536.01-.021Z" transform="translate(-254.503)" fill="#e6e6e6" fill-rule="evenodd"/>
+      <path id="Combined-Shape-4" data-name="Combined-Shape" d="M14.713,6.6l-2.848,9.316H8.359L5.509,6.6a.321.321,0,0,0-.636.058s0,0,0,0v9.259H0V0H5.428a2.33,2.33,0,0,1,2.1,1.553L9.9,9.31c.118.386.309.386.427,0L12.7,1.553A2.329,2.329,0,0,1,14.8,0h5.428V15.919H15.35V6.66s0,0,0,0a.321.321,0,0,0-.637-.053Z" fill="#e6e6e6" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

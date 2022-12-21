@@ -772,7 +772,7 @@ textarea:focus {
     padding-top: 20px;
     margin-top: -40px;
   }
-  
+
   .double-side__part {
     margin-top: 40px;
     width: 100%;
@@ -802,4 +802,30 @@ textarea:focus {
 }
 .failture {
   background-color: #960018;
+}
+
+.payment-logos {
+  background-color: var(--color-dgray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.payment-logo-groups {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-logo-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -16px;
+}
+
+.payment-logo {
+  width: 82px;
+  margin-left: 16px;
+  text-align: center;
 }
